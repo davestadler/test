@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Extra Large - {{titl}}</title>
+  <style>
+    header {
+      height: 600px;
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <article>
+      <header>
+        <h1>{{title}}</h1>
+      </header>
+      {{foreach page.sections}}
+      <section>
+        {{section}}
+      </section>
+      {{endforeach}}
+    </article>
+  </div>
+</body>
+</html>
